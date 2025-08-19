@@ -1,7 +1,6 @@
-const Criatura = require("./Classes/Criatura.js");
+const Criatura = require("./Criatura.js");
 
 class Fada extends Criatura{
-    ataqueMagico;
 
     constructor(nome, ataqueMagico){
         super(nome, ataqueMagico)

@@ -1,13 +1,12 @@
-const Criatura = require("./Classes/Criatura.js");
+const Criatura = require("./Criatura.js");
 
 class Dragao extends Criatura{
-    ataqueMagico;
 
     constructor(nome, ataqueMagico){
         super(nome, ataqueMagico)
         this.ataqueMagico = "Sopro de Fogo Infernal";
     }
-    
+
     agir(){
         this.alterarEnergia(-30);
         return `${this.nome} lança ${this.ataqueMagico}!`;
